@@ -1,5 +1,9 @@
-ID,NAME,BRAND,MODEL,COLOR,RELEASE YEAR
+ID,NAME,BRAND,MODEL,COLOUR,RELEASE YEAR
 1,R,VW,Golf,red,1979
 2,B,Nissan,Skyline,blue,1988
 3,W,BMW,320,white,1999
-4,Y,HONDA,Civic,yellow.2000
+4,Y,HONDA,Civic,yellow,2000
+5,P,PEUGEOT,5008,pink,1982
+6,O,FORD,Focus,orange,1987
+7,G,KIA,Ceed,green,1993
+8,C,SKODA,Octavia,crimson,1997

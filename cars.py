@@ -3,20 +3,28 @@ import os, csv
 
 racenr = 0
 number_of_cars = 0
-
 place = {}
 speed = {}
 race_car = {}
+race_car_colour = {}
+race_car_id = {}
+car_choice = '0'
+line_count = 0
+amount_bet = '0'
+sum_bet_money = 0
+car_winner = 0
 
 with open('cars.csv') as cars_csv:
     csv_reader = csv.DictReader(cars_csv)
-    line_count = 0
+    line_count = -1
     for row in csv_reader:
-        if line_count == 0:
+        if line_count == -1:
             line_count += 1
-        race_car[line_count - 1] = row['NAME']
+        race_car[line_count] = row['NAME']
+        race_car_colour[line_count] = row['COLOUR']
+        race_car_id[line_count] = row['ID']
         line_count += 1
-    number_of_cars = line_count - 1
+    number_of_cars = line_count
 
 
 def clear():
